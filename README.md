@@ -16,3 +16,30 @@ my working and learning notes for the summer23 internship @Caterpillar
 
   say_hello "Edison"
   ```
+- string
+  - concatenation  
+    `puts "Edison" + ' ' + 'Zhang'`
+  - interpolation  
+    ```
+    first_name = 'Edison'
+    last_name = "Zhang"
+    puts "#{first_name} #{last_name}" # has to use double quote there
+    ```
+  - common methods
+    - .length
+    - .reverse
+    - .capitalize
+    - .empty?  
+      `puts "".empty?   # true`
+    - .nil?
+      `puts nil.nil?    # true`
+    - .sub vs. gsub (g stands for global)
+      `puts "Hi Peoria".sub("Chicago")  # Hi Chicago`
+  - variable assignment(pass by ref)
+    ```
+    first_name = "Jiahao"
+    new_first_name = first_name
+    new_first_name = "Edison"
+    puts first_name    # "Jiahao"
+    ```
+  
