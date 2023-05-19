@@ -156,3 +156,56 @@ my working and learning notes for the summer23 internship @Caterpillar
         - `arr.shift    #######FIFO######`
       - the last element
         - `arr.pop    #######LIFO######`
+
+- Hashes
+  -
+  ```
+  my_details = {"name" => "edison", "favcolor" => "grey"}
+  p my_details["favcolor"]
+  ```
+  - Symbol [identity -> something that wouldn't change]  
+  ```
+  symbol_key_hash = {a: 1, b: 2, c: 3}
+  # symbol_key_hash = {:a => 1, :b => 2, :c => 3}
+  puts symbol_key_hash[:b]
+  ```
+    - In Ruby 2.3(.0), these are all the same:  
+      {:"a" => 1}  
+      {"a": 1},  
+      {:a => 1}  
+      {a: 1}  
+
+      They all translate to the same thing: a is a symbol in all these cases.  
+
+      {"a"=>1} is different: a is a string in this case.
+
+  - Iterators
+    ```
+    hash = {a: 1, b: "hello", c: 3, "d": 4}
+
+    # block
+    hash.each do |key, value|
+      puts "The class for key is #{key.class} and the value is #{value.class}"
+    end
+
+    # one line style
+    hash.each {|k, v| puts "The class for key is #{k.class} and the value is #{v.class}"}
+
+    # .select(!)
+    hash.select! {|k, v| v.is_a?(String)}
+      #SAME AS
+    hash.each {|k, v| hash.delete(k) if !k.is_a?(Symbol)}
+    ```
+
+
+  - add and modify the hash
+  ```
+  hash = {a: 1, b: 2, c: 3}
+  hash[:d] = 4
+  hash[:a] = 0
+  ```
+
+  - METHODS
+    - .keys
+    - .values
+    - .delete
