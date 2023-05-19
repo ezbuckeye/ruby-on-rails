@@ -19,7 +19,7 @@ my working and learning notes for the summer23 internship @Caterpillar
 - string
   - concatenation  
     `puts "Edison" + ' ' + 'Zhang'`  
-    `puts "5" * 3   # "555"`
+    `puts "-" * 10   # "----------"`
   - interpolation  
     ```
     first_name = 'Edison'
@@ -32,9 +32,9 @@ my working and learning notes for the summer23 internship @Caterpillar
     - .capitalize
     - .empty?  
       `puts "".empty?   # true`
-    - .nil?
+    - .nil?  
       `puts nil.nil?    # true`
-    - .sub vs. gsub (g stands for global)
+    - .sub vs. gsub (g stands for global)  
       `puts "Hi Peoria".sub("Chicago")  # Hi Chicago`
   - variable assignment(pass by ref)
     ```
@@ -49,3 +49,22 @@ my working and learning notes for the summer23 internship @Caterpillar
     input = gets.chomp
     puts input.to_i * 2
     ```
+- numbers
+  - Integer and Float
+  ```
+  puts 10 / 4  # 2
+  puts 10 / 4.0 # 2.5
+  puts 10 / 4.to_f  #2.5
+  puts "10".to_i    #10
+  puts "hello".to_i   #0
+  ```
+  - methods
+    - .times
+      `10.times {print "-"}   # executes the code for 10 times`
+    - .odd?
+    - .even?
+    - .to_i
+    - .to_f
+    - .to_s
+  - get random number  
+  `puts rand(100)   # [0, 99]`
