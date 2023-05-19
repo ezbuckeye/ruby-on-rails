@@ -157,7 +157,7 @@ my working and learning notes for the summer23 internship @Caterpillar
       - the last element
         - `arr.pop    #######LIFO######`
 - Hashes
-  -
+  - create
   ```
   my_details = {"name" => "edison", "favcolor" => "grey"}
   p my_details["favcolor"]
