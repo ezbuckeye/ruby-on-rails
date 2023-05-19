@@ -18,7 +18,8 @@ my working and learning notes for the summer23 internship @Caterpillar
   ```
 - string
   - concatenation  
-    `puts "Edison" + ' ' + 'Zhang'`
+    `puts "Edison" + ' ' + 'Zhang'`  
+    `puts "5" * 3   # "555"`
   - interpolation  
     ```
     first_name = 'Edison'
@@ -42,4 +43,9 @@ my working and learning notes for the summer23 internship @Caterpillar
     new_first_name = "Edison"
     puts first_name    # "Jiahao"
     ```
-  
+  - get string from user
+    ```
+    puts "Enter a number to multiply by 2"
+    input = gets.chomp
+    puts input.to_i * 2
+    ```
