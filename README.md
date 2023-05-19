@@ -68,3 +68,8 @@ my working and learning notes for the summer23 internship @Caterpillar
     - .to_s
   - get random number  
   `puts rand(100)   # [0, 99]`
+- comparison  ![== vs. === vs. eql? vs. equal?](https://medium.com/@khalidh64/difference-between-eql-equal-in-ruby-2ffa7f073532)
+  - `10 == "10"     # false`
+  - `10 == "10".to_f    #true`
+  - `10 === 10.0      #true`
+  - `10.eql?(10.0)    #false(comparing both type and value)`
