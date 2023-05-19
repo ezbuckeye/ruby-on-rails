@@ -156,7 +156,6 @@ my working and learning notes for the summer23 internship @Caterpillar
         - `arr.shift    #######FIFO######`
       - the last element
         - `arr.pop    #######LIFO######`
-
 - Hashes
   -
   ```
