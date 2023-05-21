@@ -193,7 +193,7 @@ my working and learning notes for the summer23 internship @Caterpillar
     # .select(!)
     hash.select! {|k, v| v.is_a?(String)}
       #SAME AS
-    hash.each {|k, v| hash.delete(k) if !k.is_a?(Symbol)}
+    hash.each {|k, v| hash.delete(k) if !v.is_a?(String)}
     ```
 
 
