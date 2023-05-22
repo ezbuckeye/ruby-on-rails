@@ -249,3 +249,7 @@ my working and learning notes for the summer23 internship @Caterpillar
 
   puts "You have exceeded the number of attempts" if attempts == 4
   ```
+
+- Ruby Styles
+  - class name => CamelCase
+  - variable, method name => snake_case
