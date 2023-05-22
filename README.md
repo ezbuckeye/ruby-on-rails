@@ -293,3 +293,78 @@ my working and learning notes for the summer23 internship @Caterpillar
 - Ruby Styles
   - class name => CamelCase
   - filenames, variable names, method names => snake_case
+
+- Object Oriented Programming sample code
+  - student.rb
+    ```
+    require_relative 'crud'
+    
+    class Student
+      include Crud
+      attr_accessor :first_name, :last_name, :email, :username, :password
+    
+      def initialize(firstname, lastname, username, email, password)
+        @first_name = firstname
+        @last_name = lastname
+        @username = username
+        @email = email
+        @password = password
+      end
+    
+      def to_s
+        "First name: #{@first_name}, Last name: #{@last_name}, Username: #{@username},
+                      email address: #{@email}"
+      end
+    
+    end
+    
+    mashrur = Student.new("Mashrur", "Hossain", "mashrur1", "mashrur@example.com",
+                          "password1")
+    john = Student.new("John", "Doe", "john1", "john1@example.com",
+                          "password2")
+    
+    hashed_password = mashrur.create_hash_digest(mashrur.password)
+    
+    puts hashed_password
+    ```
+  - crud.rb
+    ```
+    require 'bundler/inline'
+ 
+    gemfile true do
+    source 'http://rubygems.org'
+    gem 'bcrypt'
+    end
+    
+    module Crud
+      require 'bcrypt'
+      puts "Module CRUD activated"
+    
+      def create_hash_digest(password)
+        BCrypt::Password.create(password)
+      end
+    
+      def verify_hash_digest(password)
+        BCrypt::Password.new(password)
+      end
+    
+      def create_secure_users(list_of_users)
+        list_of_users.each do |user_record|
+          user_record[:password] = create_hash_digest(user_record[:password])
+        end
+        list_of_users
+      end
+    
+      def authenticate_user(username, password, list_of_users)
+        list_of_users.each do |user_record|
+          if user_record[:username] == username && verify_hash_digest(user_record[:password]) == password
+            return user_record
+          end
+        end
+        "Credentials were not correct"
+      end
+    end
+    ```
+
+
+## rails notes
