@@ -300,7 +300,7 @@ my working and learning notes for the summer23 internship @Caterpillar
     require_relative 'crud'
     
     class Student
-      include Crud
+      include Crud      # MIXIN
       attr_accessor :first_name, :last_name, :email, :username, :password
     
       def initialize(firstname, lastname, username, email, password)
@@ -365,6 +365,5 @@ my working and learning notes for the summer23 internship @Caterpillar
       end
     end
     ```
-
-
 ## rails notes
+- [blog app](https://guides.rubyonrails.org/getting_started.html#using-partials-to-share-view-code)
