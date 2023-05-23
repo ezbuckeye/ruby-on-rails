@@ -366,4 +366,4 @@ my working and learning notes for the summer23 internship @Caterpillar
     end
     ```
 ## rails notes
-- [blog app](https://guides.rubyonrails.org/getting_started.html#using-partials-to-share-view-code)
+- [blog app](https://guides.rubyonrails.org/getting_started.html)
