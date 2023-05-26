@@ -69,6 +69,11 @@ GEM
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     ansi (1.5.0)
+    appmap (0.99.4)
+      activesupport
+      method_source
+      rack
+      reverse_markdown
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
@@ -211,6 +216,8 @@ GEM
     regexp_parser (1.8.2)
     reline (0.3.4)
       io-console (~> 0.5)
+    reverse_markdown (2.1.1)
+      nokogiri
     ruby-progressbar (1.13.0)
     ruby_dep (1.5.0)
     rubyzip (1.3.0)
@@ -279,6 +286,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  appmap
   bootsnap (= 1.4.5)
   byebug (= 11.0.1)
   capybara (= 3.28.0)

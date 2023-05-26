@@ -1,2 +1,0 @@
-class Comicbook < ApplicationRecord
-end
