@@ -18,13 +18,13 @@ describe 'Pets API' do
       }
 
       response '201', 'pet created' do
-        let(:pet) { { name: 'Dodo', status: 'available' } }
+        let(:pet) { {name: 'foo', status: 'bar'} }
         run_test!
       end
 
       response '422', 'invalid request' do
         let(:pet) { { name: 'foo' } }
-        run_test!
+        run_test! 
       end
     end
   end
@@ -42,11 +42,11 @@ describe 'Pets API' do
             id: { type: :integer, },
             name: { type: :string },
             photo_url: { type: :string },
-            status: { type: :string }
+            status: { type: :string },
           },
           required: [ 'id', 'name', 'status' ]
 
-        let(:id) { Pet.create(name: 'foo', status: 'bar', photo_url: 'http://example.com/avatar.jpg').id }
+        let(:id) { Api::V1::Pet.create(name: 'foo', status: 'bar', photo_url: 'http://example.com/avatar.jpg').id }
         run_test!
       end
 

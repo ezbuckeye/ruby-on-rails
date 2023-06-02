@@ -1,0 +1,32 @@
+
+An error occurred while loading ./:rswag=.
+Failure/Error: __send__(method, file)
+
+LoadError:
+  cannot load such file -- /Users/edisonzhang/Documents/study/ruby-on-rails/swagger-demo/:rswag=
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/configuration.rb:2106:in `load'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/configuration.rb:2106:in `load_file_handling_errors'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/configuration.rb:1609:in `block in load_spec_files'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/configuration.rb:1607:in `each'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/configuration.rb:1607:in `load_spec_files'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/runner.rb:102:in `setup'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/runner.rb:86:in `run'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/runner.rb:71:in `run'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/lib/rspec/core/runner.rb:45:in `invoke'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/gems/rspec-core-3.9.3/exe/rspec:4:in `<top (required)>'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/bin/rspec:25:in `load'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/bin/rspec:25:in `<main>'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/bin/ruby_executable_hooks:22:in `eval'
+# /Users/edisonzhang/.rvm/gems/ruby-2.7.2/bin/ruby_executable_hooks:22:in `<main>'
+# 
+#   Showing full backtrace because every line was filtered out.
+#   See docs for RSpec::Configuration#backtrace_exclusion_patterns and
+#   RSpec::Configuration#backtrace_inclusion_patterns for more information.
+Run options: include {:rswag=>true}
+
+All examples were filtered out
+
+
+Finished in 0.00001 seconds (files took 0.081 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
